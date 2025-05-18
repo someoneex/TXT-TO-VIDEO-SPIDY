@@ -254,7 +254,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗦𝗣𝗜𝗗𝗬™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗™👨🏻‍💻**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -938,7 +938,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝗦𝗣𝗜𝗗𝗬™🇮🇳"
+    credit = '[𝐂𝐀 𝐈𝐧𝐭𝐞𝐫 𝐗](https://t.me/Inter_X_Admin_Bot)'
     try:    
         with open(x, "r") as f:
             content = f.read()
